@@ -1,15 +1,13 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Challenge4Component } from '../../challenges/challenge-4/challenge-4.component';
 
 @Component({
   selector: 'app-challenge-4-view',
   standalone: true,
-  imports: [],
+  imports: [Challenge4Component],
   template: `
-    <p>
-      challenge-4-view works!
-    </p>
-  `
+    <app-challenge-4 />
+  `,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Challenge4ViewComponent {
-
-}
+export class Challenge4ViewComponent {}

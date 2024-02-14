@@ -8,15 +8,7 @@ import {
 import { map, timer } from 'rxjs';
 
 const checkEmailValidity = (email: string) =>
-  timer(0).pipe(
-    map(() => {
-      if (email.endsWith('.sk')) {
-        return 'Neakceptuje sa domena .sk';
-      } else {
-        return '';
-      }
-    }),
-  );
+  timer(0).pipe(map(() => (email.endsWith('.sk') ? 'Neakceptuje sa domena .sk' : '')));
 
 @Component({
   standalone: true,
@@ -35,10 +27,7 @@ export class Challenge4Component implements AfterViewChecked {
   errorMessage = '';
 
   checkEmail({ value }: HTMLInputElement): void {
-    checkEmailValidity(value).subscribe(response => {
-      this.errorMessage = response;
-    });
-
+    checkEmailValidity(value).subscribe(response => (this.errorMessage = response));
     this.cdr.markForCheck();
   }
 

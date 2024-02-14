@@ -1,7 +1,13 @@
-<a routerLink="challenge-1">Challenge 1</a>
-<a routerLink="challenge-2">Challenge 2</a>
-<a routerLink="challenge-3">Challenge 3</a>
-<a routerLink="challenge-4">Challenge 4</a>
-<a routerLink="challenge-5">Challenge 5</a>
+<div class="p-10">
+  <div class="flex gap-x-2">
+    <a routerLink="challenge-1" routerLinkActive="active">Challenge 1</a>
+    <a routerLink="challenge-2" routerLinkActive="active">Challenge 2</a>
+    <a routerLink="challenge-3" routerLinkActive="active">Challenge 3</a>
+    <a routerLink="challenge-4" routerLinkActive="active">Challenge 4</a>
+    <a routerLink="challenge-5" routerLinkActive="active">Challenge 5</a>
+  </div>
 
-<router-outlet/>
+  <div class="py-5">
+    <router-outlet/>
+  </div>
+</div>
