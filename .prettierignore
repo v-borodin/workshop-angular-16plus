@@ -1,0 +1,19 @@
+# Compiled output
+/dist
+
+# Node
+/node_modules
+
+# IDEs and editors
+.idea/
+
+# Miscellaneouscle
+/.angular/cache
+.prettierrc
+*.html
+*.json
+*.md
+
+# System files
+.DS_Store
+Thumbs.db
