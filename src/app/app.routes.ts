@@ -5,6 +5,7 @@ import {
   Challenge3ViewComponent,
   Challenge4ViewComponent,
   Challenge5ViewComponent,
+  ExpanderViewComponent,
 } from './routes';
 
 export const routes: Routes = [
@@ -27,5 +28,9 @@ export const routes: Routes = [
   {
     path: 'challenge-5',
     component: Challenge5ViewComponent,
+  },
+  {
+    path: 'expander',
+    component: ExpanderViewComponent,
   },
 ];

@@ -1,0 +1,14 @@
+:host {
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.2s linear;
+
+  &.expanded {
+    grid-template-rows: 1fr;
+  }
+}
+
+.expander-wrapper {
+  min-height: 0;
+}
