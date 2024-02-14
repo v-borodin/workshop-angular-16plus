@@ -6,7 +6,7 @@ import { Challenge5Component } from '../../challenges/challenge-5/challenge-5.co
   standalone: true,
   imports: [Challenge5Component],
   template: `
-    <app-challenge-5 />
+    <app-challenge-5 class="wrapper" />
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

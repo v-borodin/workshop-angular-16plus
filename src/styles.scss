@@ -15,3 +15,25 @@ a {
 button, [type=button] {
   @apply font-bold py-2 px-4 rounded bg-indigo-600 text-white;
 }
+
+p {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid rebeccapurple;
+}
+
+.trigger {
+  position: absolute;
+  background: red;
+}
+
+.wrapper {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: block;
+  border: 2px solid red;
+}
+

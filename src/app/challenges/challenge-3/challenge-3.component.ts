@@ -8,7 +8,7 @@ const USER_STORE = { name: 'Slavo', age: 25 };
   selector: 'app-challenge-3',
   template: `
     @if (user) {
-      {{ user.name }} {{ user.age }}
+      <p>{{ user.name }} {{ user.age }}</p>
     }
     <button (click)="loadUser()" type="button">Load user</button>
   `,
