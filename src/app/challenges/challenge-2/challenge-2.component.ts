@@ -1,4 +1,10 @@
-import { AfterViewChecked, ChangeDetectionStrategy, Component } from '@angular/core';
+import {
+  AfterViewChecked,
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+  Component,
+  inject,
+} from '@angular/core';
 
 @Component({
   standalone: true,
@@ -12,10 +18,15 @@ import { AfterViewChecked, ChangeDetectionStrategy, Component } from '@angular/c
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Challenge2Component implements AfterViewChecked {
+  private readonly cdr = inject(ChangeDetectorRef);
+
   show = false;
 
   showHint(): void {
-    setTimeout(() => (this.show = true), 250);
+    setTimeout(() => {
+      this.show = true;
+      this.cdr.markForCheck();
+    }, 250);
   }
 
   ngAfterViewChecked(): void {

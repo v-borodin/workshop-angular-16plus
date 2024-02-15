@@ -7,6 +7,7 @@ import { AutoSaveDirective } from '../../directives/auto-save.directive';
   template: `
     <form class="flex flex-col gap-y-2">
       <input name="email" type="email" autoSave />
+      <input name="name" type="text" autoSave />
     </form>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,

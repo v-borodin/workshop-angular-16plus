@@ -15,7 +15,10 @@ export class Challenge1Component implements AfterViewChecked {
   user = { name: 'Yozef', enabled: true };
 
   toggleUser(): void {
-    this.user.enabled = !this.user.enabled;
+    this.user = {
+      ...this.user,
+      enabled: !this.user.enabled,
+    };
   }
 
   ngAfterViewChecked(): void {
