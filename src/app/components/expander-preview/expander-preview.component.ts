@@ -7,7 +7,9 @@ import { ExpanderComponent } from './expander/expander.component';
   template: `
     <button (click)="show = !show" class="mb-2" type="button">Show</button>
 
-    <app-expander></app-expander>
+    <app-expander>
+      <img width="300" src="assets/dog.png" alt="Dog" />
+    </app-expander>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [ExpanderComponent],

@@ -1,3 +1,4 @@
+export * from './auto-save-view';
 export * from './challenge-1-view';
 export * from './challenge-2-view';
 export * from './challenge-3-view';

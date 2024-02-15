@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import {
+  AutoSaveViewComponent,
   Challenge1ViewComponent,
   Challenge2ViewComponent,
   Challenge3ViewComponent,
@@ -32,5 +33,9 @@ export const routes: Routes = [
   {
     path: 'expander',
     component: ExpanderViewComponent,
+  },
+  {
+    path: 'autosave',
+    component: AutoSaveViewComponent,
   },
 ];
