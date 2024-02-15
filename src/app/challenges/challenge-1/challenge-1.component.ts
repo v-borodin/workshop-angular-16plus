@@ -12,7 +12,7 @@ import { UserComponent } from './user/users.component';
   imports: [UserComponent],
 })
 export class Challenge1Component implements AfterViewChecked {
-  user = { name: 'Michal', enabled: true };
+  user = { name: 'Yozef', enabled: true };
 
   toggleUser(): void {
     this.user.enabled = !this.user.enabled;

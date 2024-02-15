@@ -1,7 +1,7 @@
 import { AfterViewChecked, ChangeDetectionStrategy, Component } from '@angular/core';
 import { of } from 'rxjs';
 
-const USER_STORE = { name: 'Slavo', age: 25 };
+const USER = { name: 'Slavo', age: 25 };
 
 @Component({
   standalone: true,
@@ -18,7 +18,7 @@ export class Challenge3Component implements AfterViewChecked {
   user?: Record<string, any>;
 
   loadUser(): void {
-    of(USER_STORE).subscribe(user => (this.user = user));
+    of(USER).subscribe(user => (this.user = user));
   }
 
   ngAfterViewChecked(): void {

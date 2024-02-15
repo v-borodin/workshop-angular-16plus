@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { AutoSaveDirective } from '../../directives/auto-save.directive';
 
 @Component({
@@ -7,10 +6,10 @@ import { AutoSaveDirective } from '../../directives/auto-save.directive';
   selector: 'app-auto-save-preview',
   template: `
     <form class="flex flex-col gap-y-2">
-      <input name="Email" type="email" autoSave />
+      <input name="email" type="email" autoSave />
     </form>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [FormsModule, AutoSaveDirective],
+  imports: [AutoSaveDirective],
 })
 export class AutoSavePreviewComponent {}

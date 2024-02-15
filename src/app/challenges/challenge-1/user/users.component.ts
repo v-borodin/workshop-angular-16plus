@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
   standalone: true,
   selector: 'app-user',
   template: `
-    <p>{{ user?.name }} {{ user?.enabled ? 'na mieste' : 'nedostupný' }}</p>
+    <p>{{ user?.name }} {{ user?.enabled ? 'online' : 'offline' }}</p>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
